@@ -1,0 +1,14 @@
+import com.google.gson.Gson;
+public class abc{
+  private String data =  "{\"tomcatStatus\": \"UP\" ,\"DBStatus\": \"UP\", \"jbossStatus\": \"UP\"}";
+    
+    public static void main(String[] args)
+  {
+    abc ob = new abc();
+    Gson gson = new Gson();
+    
+    String json = gson.toJson(ob);
+    
+    System.out.println(json);
+  }
+}
